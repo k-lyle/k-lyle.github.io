@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Welcome page</title>
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css.css">
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+    
+            <nav>
+                <ul class="menu">
+                    <li><a href="form.html">Sign up</a></li>
+                    <li><a href="Members.html">Members</a></li>
+                    <li><a href="Learn.html">History</a></li>
+                </ul>
+    
+            </nav>
+    
+        </div>
+    </header>
+    
+    
+    <h1>Welcome to the Organization</h1>
+
+    <form id="Questions" method="method" action="">
+       <input type="text" name="name" id = "name"> <label for="name"> Name </label> <br>
+
+        <fieldset>
+            <legend>Are you an information systems major?</legend>
+            <input type="radio" name="major" value="IS" id="IS"><label for="IS">Yes</label> <br>
+            <input type="radio" name="major" value="IS" id="IS"><label for="IS">No</label> <br>
+            
+        </fieldset>
+       
+       <input type="email" name="email" id="email" > <label for="email">Email</label> <br>
+       <input type="tel" name="number" id="number"> <label for="number">Phone Number</label> <br>
+       <input type="url" name="website" id="website"> <label for="website">LinkedIn URL</label> <br>  
+       <input type="date" name="graduation" id="graduation"><label for="graduation">Expected Graduation Date</label> <br>
+       
+       <label for="profile">Upload a profile picture</label> <br>
+       <input type="file" name="profile" id="profile" accept="image/*"> <br>
+       
+       <label for="description">Please describe your career goals and how you think the organization can help you.</label> <br>
+       <textarea id="description" name="description"></textarea><br>
+
+       <label for="resume">Upload a copy of your resume</label>
+       <input type="file" name="resume" id="resume"> <br><br>
+
+
+       
+       
+       <input type="date" name="date" id="date"> <label for="date">Today's date</label><br>
+
+       <input type="submit">
+        
+
+    </form>
+
+
+    <button type="button"
+
+
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    <p id="demo"></p> 
+
+</body>
+</html>
